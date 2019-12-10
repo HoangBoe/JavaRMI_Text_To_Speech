@@ -28,13 +28,17 @@ public class TTSController extends UnicastRemoteObject implements TTSInterface {
     @Override
     public byte[] executeText(String text) throws RemoteException, APIError {
         VoiceProvider tts = new VoiceProvider("d053ea3b17f4445a89e2b0571d519f42");
-        DetectLanguage.apiKey="509978fd97343d964fcd5ccfb8fce0e0";
+        DetectLanguage.apiKey = "509978fd97343d964fcd5ccfb8fce0e0";
         List<Result> results = DetectLanguage.detect(text);
 
         Result result = results.get(0);
 
+//        if (result != DetectLanguage.detect(text)) {
+//            result.language = Languages.English_UnitedStates;
+//        }
+
         System.out.println("Language: " + result.language);
-        System.out.println("Confidence: " + result.confidence);
+        //System.out.println("Confidence: " + result.confidence);
 
         Map<String, String> map = new HashMap<>();
         map.put("en", Languages.English_UnitedStates);

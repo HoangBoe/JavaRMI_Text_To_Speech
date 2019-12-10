@@ -16,6 +16,7 @@ public class GUI {
     private JPanel MyPannel;
     private static TTSInterface remote;
     private static Registry registry;
+    private static JFrame frame = new JFrame("GUI");
 
     private String getFilePath() {
         return "C:\\Windows\\Temp\\voice.mp3";
@@ -30,12 +31,16 @@ public class GUI {
                 try {
                     remote.showText(input.getText());
                     byte[] voice = remote.executeText(input.getText());
-                    FileOutputStream fos = new FileOutputStream(getFilePath());
-                    fos.write(voice, 0, voice.length);
-                    fos.flush();
-                    fos.close();
-                    MP3Player mp3Player = new MP3Player(new File(getFilePath()));
-                    mp3Player.play();
+                    if ( voice == null ) {
+                        JOptionPane.showMessageDialog(frame, "Can't detect the language");
+                    } else {
+                        FileOutputStream fos = new FileOutputStream(getFilePath());
+                        fos.write(voice, 0, voice.length);
+                        fos.flush();
+                        fos.close();
+                        MP3Player mp3Player = new MP3Player(new File(getFilePath()));
+                        mp3Player.play();
+                    }
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
@@ -53,7 +58,7 @@ public class GUI {
 
         }
 
-        JFrame frame = new JFrame("GUI");
+
         frame.setContentPane(new GUI().MyPannel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

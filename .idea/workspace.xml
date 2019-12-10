@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93a8b938-0a49-447b-82ab-5450f6e496a2" name="Default Changelist" comment="" />
+    <list default="true" id="93a8b938-0a49-447b-82ab-5450f6e496a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hoang/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hoang/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/hoang/TTSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hoang/TTSController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hoang/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hoang/GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hoang/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hoang/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hoang/TTSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hoang/TTSController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -24,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="D:/Downloads/voicerss_tts.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.rmicompiler" />
@@ -94,30 +104,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="75" key="#Project_Structure" timestamp="1575971937717">
+    <state x="361" y="75" key="#Project_Structure" timestamp="1575987529086">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="75" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1575971937717" />
+    <state x="361" y="75" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1575987529086" />
     <state x="501" y="158" key="FileChooserDialogImpl" timestamp="1575972360587">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="501" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575972360587" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1575986951472">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1575992101958">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1575986951472" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1575986951472">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1575992101958" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1575992101958">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1575986951472" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1575986951472">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1575992101958" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1575992101958">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1575986951472" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1575986951472">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1575992101958" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1575992101958">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1575986951472" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1575992101958" />
     <state x="299" y="71" key="Maven.ArtifactSearchDialog" timestamp="1575971785844">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -126,5 +136,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1575972362596" />
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1575992133081">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1575992133081" />
   </component>
 </project>
