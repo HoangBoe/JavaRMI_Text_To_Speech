@@ -1,4 +1,4 @@
-package com.hoang;
+package com.group6;
 
 
 import com.detectlanguage.DetectLanguage;
@@ -19,7 +19,6 @@ public class TTSController extends UnicastRemoteObject implements TTSInterface {
     protected TTSController() throws RemoteException {
     }
 
-
     @Override
     public void showText(String text) throws RemoteException {
         System.out.println(text);
@@ -27,29 +26,27 @@ public class TTSController extends UnicastRemoteObject implements TTSInterface {
 
     @Override
     public byte[] executeText(String text) throws RemoteException, APIError {
+
         VoiceProvider tts = new VoiceProvider("d053ea3b17f4445a89e2b0571d519f42");
+
         DetectLanguage.apiKey = "509978fd97343d964fcd5ccfb8fce0e0";
+
         List<Result> results = DetectLanguage.detect(text);
 
         Result result = results.get(0);
-
-//        if (result != DetectLanguage.detect(text)) {
-//            result.language = Languages.English_UnitedStates;
-//        }
 
         System.out.println("Language: " + result.language);
         //System.out.println("Confidence: " + result.confidence);
 
         Map<String, String> map = new HashMap<>();
         map.put("en", Languages.English_UnitedStates);
-        map.put("ca", Languages.Catalan);
         map.put("zh", Languages.Chinese_China);
-        map.put("da", Languages.Danish);
-        map.put("nl", Languages.Dutch);
-        map.put("fi", Languages.Finnish);
         map.put("fr", Languages.French_France);
         map.put("de", Languages.German);
         map.put("it", Languages.Italian);
+        map.put("ko", Languages.Korean);
+        map.put("ru", Languages.Russian);
+
 
         VoiceParameters params = new VoiceParameters(text, map.get(result.language));
         params.setCodec(AudioCodec.MP3);

@@ -1,4 +1,4 @@
-package com.hoang;
+package com.group6;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;

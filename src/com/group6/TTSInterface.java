@@ -1,4 +1,4 @@
-package com.hoang;
+package com.group6;
 
 
 import com.detectlanguage.errors.APIError;

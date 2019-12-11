@@ -1,4 +1,4 @@
-package com.hoang;
+package com.group6;
 
 import jaco.mp3.player.MP3Player;
 
@@ -31,7 +31,7 @@ public class GUI {
                 try {
                     remote.showText(input.getText());
                     byte[] voice = remote.executeText(input.getText());
-                    if ( voice == null ) {
+                    if (voice == null) {
                         JOptionPane.showMessageDialog(frame, "Can't detect the language");
                     } else {
                         FileOutputStream fos = new FileOutputStream(getFilePath());
@@ -49,13 +49,12 @@ public class GUI {
     }
 
 
-
     public static void main(String[] args) {
         try {
             registry = LocateRegistry.getRegistry(6060);
             remote = (TTSInterface) registry.lookup("tts");
         } catch (Exception ex) {
-
+            ex.printStackTrace();
         }
 
 
